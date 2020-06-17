@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8aa16055-e72d-4e39-9502-51a1a6ea6639" name="go" url="http://140.143.225.237">
+        <fileTransfer host="140.143.225.237" port="22" rootFolder="/root/go" accessType="SFTP" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
