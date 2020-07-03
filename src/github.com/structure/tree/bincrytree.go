@@ -37,6 +37,34 @@ func nextList(node *Hero) {
 	}
 }
 
+//层次遍历(广度优先遍历)
+func BreadthFirstSearch(node *Hero) {
+	if node == nil {
+		return
+	}
+
+	result := []int{}
+	nodes := []*Hero{node}
+	fmt.Println(result)
+	fmt.Println(nodes)
+
+	// for len(nodes) > 0 {
+	// 	curNode := nodes[0]
+	// 	nodes = nodes[1:]
+	// 	result = append(result, curNode.Value)
+	// 	if curNode.Left != nil {
+	// 		nodes = append(nodes, curNode.Left)
+	// 	}
+	// 	if curNode.Right != nil {
+	// 		nodes = append(nodes, curNode.Right)
+	// 	}
+	// }
+
+	// for _, v := range result {
+	// 	fmt.Print(v, " ")
+	// }
+}
+
 func main() {
 	var root = &Hero{
 		no:   1,
@@ -69,6 +97,7 @@ func main() {
 	oneLeftTree.leftChild = twoLeftTree
 	oneLeftTree.rightChild = twoRightTree
 
+	BreadthFirstSearch(root)
 	preList(root)
 	fmt.Println()
 	middleList(root)

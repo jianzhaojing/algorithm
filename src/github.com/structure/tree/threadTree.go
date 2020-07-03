@@ -96,7 +96,7 @@ func (t *tree) delete(value int) {
 		}
 		return
 	}
-	
+
 	s := t.dangleLeftMostNode(c.r, c)
 	s.l, s.r = c.l, c.r
 	if p == nil {
@@ -177,7 +177,10 @@ func (t *tree) threadImplement(n *treeNode) {
 
 func main() {
 	t := newTree()
+	fmt.Println(t)
 	t.append(10)
+	t.printThreadedTree()
+	fmt.Println()
 	t.append(0)
 	t.append(20)
 	t.append(-10)
